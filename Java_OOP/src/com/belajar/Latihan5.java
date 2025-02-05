@@ -15,8 +15,9 @@ public class Latihan5 {
 
         System.out.print("ID Perserta : ");
         id = Input.nextInt();
+        Input.nextLine();
         System.out.print("Nama : ");
-        nama = Input.next();
+        nama = Input.nextLine();
         System.out.print("Umur : ");
         usia = Input.nextInt();
         System.out.print("Jenis Kelamin : ");
@@ -36,6 +37,6 @@ public class Latihan5 {
         System.out.println("Umur: " + usia );
         System.out.println("Gender: " + gender );
         System.out.println("No Telepon Wali: " + teleponWali );
-        System.out.println("Lama Menetap: " + lamaMenetap );
+        System.out.println("Lama Menetap: " + lamaMenetap + " hari" );
     }
 }
