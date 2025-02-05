@@ -1,5 +1,8 @@
 package com.belajar;
 import java.util.Scanner;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
 
 public class Latihan5 {
     public static void main(String[] args) {
@@ -38,5 +41,22 @@ public class Latihan5 {
         System.out.println("Gender: " + gender );
         System.out.println("No Telepon Wali: " + teleponWali );
         System.out.println("Lama Menetap: " + lamaMenetap + " hari" );
+    }
+
+    public static void Main(String[] args) throws IOException {
+        String nama;
+        Integer umur;
+        // Membuat objek input stringstream
+        InputStreamReader isr = new InputStreamReader(System.in);
+        // Membuat objek buffered reader
+        BufferedReader br = new BufferedReader(isr);
+        // Mengisi variabel nama dengan data yang diinputkan
+        System.out.print("Masukkan Nama Anda: ");
+        nama = br.readLine();
+        System.out.print("Masukkan Umur");
+        umur = br.read();
+        // Menampilkan pesan Halo, nama!
+        System.out.print("Halo, " + nama + "!");
+        
     }
 }
