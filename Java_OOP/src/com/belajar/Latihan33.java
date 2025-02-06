@@ -75,16 +75,6 @@ public class Latihan33 {
             
             switch (pilihan) {
                 case 1:
-                    System.out.println("\nDAFTAR BARANG MINIMARKET:");
-                    System.out.println("No.\tNama Barang\t\tHarga");
-                    System.out.println("=====================================");
-                    for (int i = 0; i < namaBarang.length; i++) {
-                        System.out.printf("%d.\t%-20s\tRp %,d%n", 
-                            (i + 1), namaBarang[i], hargaBarang[i]);
-                    }
-                    break;
-                    
-                case 2:
                     System.out.print("\nMasukkan nomor barang (1-99): ");
                     int nomor = scanner.nextInt();
                     if (nomor >= 1 && nomor <= 99) {
@@ -95,6 +85,16 @@ public class Latihan33 {
                         System.out.println("Nomor barang tidak valid!");
                     }
                     break;
+                case 2:
+                    System.out.println("\nDAFTAR BARANG MINIMARKET:");
+                    System.out.println("No.\tNama Barang\t\tHarga");
+                    System.out.println("=====================================");
+                    for (int i = 0; i < namaBarang.length; i++) {
+                        System.out.printf("%d.\t%-20s\tRp %,d%n", 
+                            (i + 1), namaBarang[i], hargaBarang[i]);
+                    }
+                    break;
+                    
                     
                 case 3:
                     System.out.println("Terima kasih telah menggunakan sistem minimarket!");
