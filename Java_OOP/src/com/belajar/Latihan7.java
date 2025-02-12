@@ -10,10 +10,10 @@ class Kendaraan {
     }
 }
 
-class Mobil extends Kendaraan {
+class mobil extends Kendaraan {
     private int jumlahPintu;
 
-    public Mobil(String merk, int tahun, int jumlahPintu) {
+    public mobil(String merk, int tahun, int jumlahPintu) {
         super(merk, tahun);
         this.jumlahPintu = jumlahPintu;
     }
@@ -27,8 +27,8 @@ class Mobil extends Kendaraan {
 
 public class Latihan7 {
     public static void main(String[] args) {
-        Mobil mobil1 = new Mobil("Toyota", 2020, 4);
-        Mobil mobil2 = new Mobil("Honda", 2021, 2);
+        mobil mobil1 = new mobil("Toyota", 2020, 4);
+        mobil mobil2 = new mobil("Honda", 2021, 2);
 
         System.out.println("=== Info Mobil 1 ===");
         mobil1.tampilkanInfo();
